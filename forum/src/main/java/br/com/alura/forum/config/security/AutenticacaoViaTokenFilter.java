@@ -35,6 +35,7 @@ public class AutenticacaoViaTokenFilter extends OncePerRequestFilter {
 		
 		if(valido) {
 			autenticarCliente(token);
+			
 		}
 
 		filterChain.doFilter(request, response);
